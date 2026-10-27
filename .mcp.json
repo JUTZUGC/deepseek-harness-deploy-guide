@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "dsh-guide": {
+      "command": "node",
+      "args": [
+        "mcp-server.mjs"
+      ]
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "owner": "JUTZUGC",
+  "code": "JUTZUGC",
+  "project": {
+    "key": "dsh",
+    "nameCn": "DeepSeek Harness",
+    "repoName": "deepseek-harness-deploy-guide",
+    "oneLiner": "263.2k stars，MIT，DeepSeek 的编码 Agent 框架，一切皆插件",
+    "officialRepo": "https://github.com/deepseek-ai/deepseek-harness",
+    "officialDocs": "https://github.com/deepseek-ai/deepseek-harness#quick-start",
+    "stars": "263.2k",
+    "license": "MIT",
+    "highlights": [
+      "263.2k stars：两个月冲到 26 万，十一月大概率继续霸榜",
+      "一切皆插件：模型、工具、界面都可替换",
+      "CLI + Web：`dsh web` 直接开浏览器工作台",
+      "MIT：完全开源",
+      "插件生态：桌面端、Web 端、插件市场都已出现",
+      "DeepSeek 官方团队维护"
+    ],
+    "mcpSupport": "dsh 自带插件体系，部分插件可接 MCP；本仓库只负责安装与启动，不注册 MCP。",
+    "webuiUrl": "",
+    "adapterPorts": "",
+    "collectedAt": "2026-10-27",
+    "verification": [
+      [
+        "npm 包 @deepseek-ai/dsh 最新版 0.2.1-rc.2，bin 为 dsh",
+        "已核对 2026-10-27"
+      ],
+      [
+        "仓库元数据已核对：263.2k stars、MIT、2026-08 建仓",
+        "已核对 2026-10-27"
+      ],
+      [
+        "README 确认 npx @deepseek-ai/dsh web 为启动方式",
+        "已核对 2026-10-27"
+      ],
+      [
+        "未实测安装与 Web 工作台",
+        "说明 2026-10-27"
+      ]
+    ],
+    "deploy": {
+      "type": "script",
+      "requires": [
+        "node"
+      ],
+      "steps": [
+        "npm install -g @deepseek-ai/dsh",
+        "dsh --version",
+        "echo '安装完成：运行 dsh web 打开工作台；首次使用按提示配置模型与 API Key'"
+      ],
+      "stepsPs": [
+        "npm.cmd install -g @deepseek-ai/dsh",
+        "dsh --version",
+        "Write-Host '安装完成：运行 dsh web 打开工作台；首次使用按提示配置模型与 API Key'"
+      ],
+      "source": "https://github.com/deepseek-ai/deepseek-harness#quick-start"
+    },
+    "pitfalls": [
+      "Node 版本太低：先升到 20 以上",
+      "`dsh web` 打不开：看端口占用，或换端口启动",
+      "插件装完不生效：确认插件版本与主程序匹配",
+      "升级后配置失效：先备份 `~/.dsh` 一类配置目录",
+      "模型报 401：检查 API Key 与环境变量",
+      "别混装桌面端与 CLI 的旧版本"
+    ]
+  },
+  "gate": {
+    "allow": [
+      "dumate"
+    ],
+    "label": "百度搭子",
+    "url": "https://www.dumate.cn/",
+    "guideUrl": "https://github.com/JUTZUGC/deepseek-harness-deploy-guide",
+    "howToFix": [
+      "1. 打开 https://www.dumate.cn/ ，下载并安装「百度搭子」电脑端（Windows / macOS）",
+      "2. 用账号登录",
+      "3. 在对话窗口发送：你好，帮我从 github 部署 JUTZUGC/deepseek-harness-deploy-guide 到我的电脑上",
+      "4. 部署完成后，在同一对话窗口里继续使用"
+    ],
+    "hint": "请改用「百度搭子」部署后再使用；本工具没有网页版入口。",
+    "onError": "allow"
+  },
+  "keywords": [
+    "DeepSeek Harness 部署",
+    "dsh 安装 教程",
+    "DeepSeek 编码 Agent",
+    "dsh web 工作台",
+    "DeepSeek 插件 框架",
+    "dsh 中文",
+    "AI 编码 框架",
+    "DeepSeek Harness 下载",
+    "dsh 插件 市场",
+    "deepseek-harness 教程"
+  ],
+  "topics": [
+    "deepseek",
+    "ai-agents",
+    "coding-agent",
+    "plugins",
+    "typescript",
+    "cli"
+  ]
+}
